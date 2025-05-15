@@ -1,0 +1,143 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #216d1a;
+}
+
+/* Cabeçalho */
+.header {
+    .logo {
+        width: 100px;
+    background: #4CAF50; /* Cor de fundo verde */
+    color: #fff;
+    padding: 1rem 0;
+    border-radius: 40%;
+    text-align: space-between;
+}
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navegação */
+.navbar {
+    background: #696868; /* Cor de fundo escura */
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    background: #555; /* Cor de fundo escura ao passar o mouse */
+}
+
+/* Seções */
+.section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #fff; /* Cor de fundo branca para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(29, 100, 1, 0.1); /* Sombra suave */
+    margin-bottom: 1.5rem;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem; /* Tamanho maior do texto */
+    color: #1b1e1c; /* Cor verde */
+}
+
+.section p {
+    margin-bottom: 1rem;
+}
+
+/* Imagens nas seções */
+.section-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-top: 3px solid #0f0f0f;
+}
+
+.footer-contact p {
+    margin: 0.5rem 0;
+}
+
+.footer-contact a {
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #d0f0c0;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    margin: 0 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.twitter {
+    background-color: #1DA1F2;
+}
+
+.social-icon.instagram {
+    background-color: #C13584;
+}
+
+/* Adiciona uma pequena margem ao redor das imagens para evitar que elas fiquem muito próximas do texto */
+img {
+    display: block;
+    margin: 1rem auto;
