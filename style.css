@@ -54,8 +54,10 @@ nav a:hover {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 80%;  /* Ajuste para tornar as imagens menores */
+  height: auto;  /* Mantém a proporção da imagem */
+  margin: 0 auto;  /* Centraliza a imagem */
+  display: block;
 }
 
 .card-content {
@@ -63,85 +65,4 @@ nav a:hover {
 }
 
 .card h2 {
-  margin-top: 0;
-  font-size: 1.8rem;
-  color: #333;
-}
-
-.card p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Carrossel de imagens */
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  margin: 30px 0;
-}
-
-.carousel {
-  display: flex;
-  animation: slide 12s infinite;
-}
-
-.carousel img {
-  width: 100%;
-  height: auto;
-  transition: transform 1s ease-in-out;
-}
-
-/* Animação de deslizamento */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateX(-100%);
-  }
-  66% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(-300%);
-  }
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.social-icons a:hover {
-  color: #4CAF50;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  he
+  margin-
