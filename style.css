@@ -1,161 +1,147 @@
-/* Reset básico e configuração padrão */
-* {
+/* Estilos gerais para o site */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   background-color: #f4f4f4;
-  color: #333;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #1b4332;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #4CAF50;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-right: 1rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 header img {
-  height: 50px;
-  border-radius: 8px;
+  max-height: 50px;
+  margin-left: 10px;
 }
 
 nav {
-  display: flex;
-  gap: 1.5rem;
+  margin-top: 15px;
 }
 
 nav a {
-  color: #a7c957;
+  margin: 0 15px;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
-  color: #f4d35e;
+  text-decoration: underline;
 }
 
-/* Conteúdo principal */
-main {
-  margin-top: 100px; /* Espaço para o cabeçalho fixo */
-  padding: 2rem;
-}
-
+/* Cartões de conteúdo */
 .card {
+  margin: 20px auto;
+  width: 80%;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
 
 .card img {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: auto;
 }
 
 .card-content {
-  padding: 1.5rem 2rem;
+  padding: 20px;
 }
 
-.card-content h2 {
-  font-size: 1.6rem;
-  color: #1b4332;
-  font-weight: 700;
+.card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
 }
 
-.card-content p {
-  color: #555;
+.card p {
   font-size: 1rem;
+  color: #555;
+}
+
+/* Carrossel de imagens */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out;
+}
+
+/* Animação de deslizamento */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
 }
 
 /* Footer */
 footer {
-  background-color: #142f23;
-  color: #eee;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 1.5rem;
+}
+
+footer p {
+  margin: 0;
 }
 
 footer a {
-  color: #f4d35e;
+  color: #4CAF50;
   text-decoration: none;
-  font-weight: 600;
-  margin: 0 0.7rem;
 }
 
 footer a:hover {
-  color: #a7c957;
+  text-decoration: underline;
 }
 
 .social-icons {
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 
 .social-icons a {
-  display: inline-block;
-  vertical-align: middle;
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.social-icons svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-  margin: 0 0.5rem;
-  transition: fill 0.3s ease;
-}
-
-.social-icons a:hover svg {
-  fill: #a7c957;
+.social-icons a:hover {
+  color: #4CAF50;
 }
 
 /* Responsividade */
-@media (min-width: 768px) {
-  .card {
-    flex-direction: row;
-    height: 250px;
-  }
-
-  .card img {
-    width: 40%;
-    height: 100%;
-  }
-
-  .card-content {
-    width: 60%;
-    padding: 2rem 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+@media (max-width: 768px) {
+  he
