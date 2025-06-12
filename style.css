@@ -8,7 +8,7 @@ body {
 
 header {
   background-color: #4CAF50;
-  padding: 10px 0;
+  padding: 20px 0;
   color: white;
   text-align: center;
 }
@@ -21,6 +21,7 @@ header h1 {
 header img {
   max-height: 50px;
   margin-left: 10px;
+  vertical-align: middle; /* Alinha a imagem do logo com o título */
 }
 
 nav {
@@ -54,8 +55,8 @@ nav a:hover {
 }
 
 .card img {
-  width: 80%;  /* Ajuste para tornar as imagens menores */
-  height: auto;  /* Mantém a proporção da imagem */
+  width: 70%;  /* Ajuste para tornar as imagens menores */
+  height: auto;
   margin: 0 auto;  /* Centraliza a imagem */
   display: block;
 }
@@ -65,4 +66,109 @@ nav a:hover {
 }
 
 .card h2 {
-  margin-
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Carrossel de imagens */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.carousel img {
+  width: 60%;  /* Ajuste para tornar as imagens menores */
+  height: auto;
+  margin: 0 auto;  /* Centraliza a imagem */
+  display: block;
+}
+
+/* Animação de deslizamento */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+  text-align: center; /* Centraliza os ícones de redes sociais */
+}
+
+.social-icons a {
+  margin: 0 15px;
+  color: white;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #4CAF50;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .carousel img {
+    width: 80%; /* Ajuste adicional para telas pequenas */
+  }
+
+  .social-icons a {
+    font-size: 1.5rem; /* Reduz o tamanho dos ícones nas telas pequenas */
+    margin: 0 10px; /* Menos espaçamento entre os ícones */
+  }
+}
