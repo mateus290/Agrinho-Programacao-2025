@@ -8,66 +8,73 @@
 </head>
 <body>
 
-<header>
-  <div style="display:flex; align-items:center;">
-    <h1>Agricultura Reservense</h1>
-    <img src="image.png" alt="Logo da Agricultura" />
-  </div>
-  <nav aria-label="Navegação principal">
-    <a href="#evolução">Evolução</a>
-    <a href="#tecnologias">Tecnologias</a>
-    <a href="#sustentabilidade">Sustentabilidade</a>
-    <a href="#cooperativas">Futuro</a>
-  </nav>
+<header role="banner">
+    <div class="logo-container">
+        <h1>Agricultura Reservense</h1>
+        <img src="image.png" alt="Logo da Agricultura Reservense" class="logo" />
+    </div>
+    <nav role="navigation" aria-label="Navegação principal">
+        <a href="#evolução" aria-label="Ir para Evolução">Evolução</a>
+        <a href="#tecnologias" aria-label="Ir para Tecnologias">Tecnologias</a>
+        <a href="#sustentabilidade" aria-label="Ir para Sustentabilidade">Sustentabilidade</a>
+        <a href="#cooperativas" aria-label="Ir para Cooperativas">Futuro</a>
+    </nav>
 </header>
 
 <main>
-  <article id="evolução" class="card" tabindex="0">
-    <img src="image copy.png" alt="Agricultura no campo" />
-    <div class="card-content">
-      <h2>A Evolução da Agricultura em Reserva: Desafios e Transformações</h2>
-      <p>Contexto Histórico e Transição Agrícola: A agricultura em Reserva, inicialmente voltada para pequenas propriedades familiares, passou por uma grande transformação com a chegada de novas tecnologias e práticas de cultivo. Essa transição foi marcada por uma mudança de foco, do cultivo básico para a produção de grãos e soja em larga escala.</p>
-    </div>
-  </article>
+    <section id="evolução" class="card" tabindex="0">
+        <img src="image copy.png" alt="Agricultura no campo, ilustração do avanço das tecnologias" />
+        <div class="card-content">
+            <h2>A Evolução da Agricultura em Reserva: Desafios e Transformações</h2>
+            <p>Contexto Histórico e Transição Agrícola: A agricultura em Reserva, inicialmente voltada para pequenas propriedades familiares...</p>
+        </div>
+    </section>
 
-  <article id="tecnologias" class="card" tabindex="0">
-    <img src="image copy 2.png" alt="Revolução Agrícola" />
-    <div class="card-content">
-      <h2>Tecnologia e Inovação na Agricultura de Reserva: O Papel da Agricultura de Precisão</h2>
-      <p>Adoção de Tecnologias Avançadas: A agricultura de precisão é uma das inovações que vem ganhando espaço em Reserva. O uso de sensores, GPS e drones permite o monitoramento em tempo real das condições do solo, otimização do uso de insumos e aumento da produtividade. Essa tecnologia tem sido fundamental para a melhoria da eficiência e da sustentabilidade na cidade.</p>
-    </div>
-  </article>
+    <section id="tecnologias" class="card" tabindex="0">
+        <img src="image copy 2.png" alt="Tecnologias como drones e sensores para agricultura" />
+        <div class="card-content">
+            <h2>Tecnologia e Inovação na Agricultura de Reserva: O Papel da Agricultura de Precisão</h2>
+            <p>Adoção de Tecnologias Avançadas: A agricultura de precisão é uma das inovações que vem ganhando espaço em Reserva...</p>
+        </div>
+    </section>
 
-  <article id="sustentabilidade" class="card" tabindex="0">
-    <img src="image copy 3.png" alt="Urbanização" />
-    <div class="card-content">
-      <h2>Sustentabilidade e Desafios Ambientais na Agricultura de Reserva</h2>
-      <p>Conservação do Solo e Recuperação de Áreas Degradadas: Em Reserva, a degradação do solo é um desafio crescente. Técnicas como plantio direto e rotação de culturas estão sendo cada vez mais utilizadas para preservar a qualidade do solo e evitar a erosão. Além disso, iniciativas para a recuperação de áreas degradadas, como a reabilitação de pastagens, também têm se tornado comuns.</p>
-    </div>
-  </article>
+    <section id="sustentabilidade" class="card" tabindex="0">
+        <img src="image copy 3.png" alt="Práticas de sustentabilidade como plantio direto" />
+        <div class="card-content">
+            <h2>Sustentabilidade e Desafios Ambientais na Agricultura de Reserva</h2>
+            <p>Conservação do Solo e Recuperação de Áreas Degradadas: Em Reserva, a degradação do solo é um desafio crescente...</p>
+        </div>
+    </section>
 
-  <article id="cooperativas" class="card" tabindex="0">
-    <img src="image copy 4.png" alt="Futuro da Agricultura" />
-    <div class="card-content">
-      <h2>O Papel das Cooperativas e da Agroindústria no Desenvolvimento da Agricultura de Reserva</h2>
-      <p>Fortalecimento das Cooperativas Locais: As cooperativas desempenham um papel crucial na agricultura de Reserva, especialmente na organização de pequenos e médios produtores. Elas ajudam a viabilizar o acesso a créditos, promovem a compra de insumos em grupo e, principalmente, garantem melhores condições para negociação e comercialização dos produtos.</p>
-    </div>
-  </article>
+    <section id="cooperativas" class="card" tabindex="0">
+        <img src="image copy 4.png" alt="Cooperativas locais no desenvolvimento agrícola" />
+        <div class="card-content">
+            <h2>O Papel das Cooperativas e da Agroindústria no Desenvolvimento da Agricultura de Reserva</h2>
+            <p>Fortalecimento das Cooperativas Locais: As cooperativas desempenham um papel crucial na agricultura de Reserva...</p>
+        </div>
+    </section>
 </main>
 
-<footer>
-  <p>Contato: <a href="mailto:contato@agricultura.com.br">contato@agricultura.com.br</a></p>
-  <div class="social-icons" aria-label="Redes sociais">
-    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M22 12a10 10 0 1 0-11.5 9.8v-6.9h-3v-2.9h3v-2.2c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2v2.5h3.4l-.5 2.9h-2.9v6.9A10 10 0 0 0 22 12"/>
-      </svg>
-    </a>
-    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M23 3a10.9 10.9 0 0 1-3.14.86A5.48 5.48 0 0 0 22.4.37a10.72 10.72 0 0 1-3.44 1.32 5.4 5.4 0 0 0-9.2 4.92A15.33 15.33 0 0 1 1.64 2.16 5.35 5.35 0 0 0 3.16 9a5.43 5.43 0 0 1-2.44-.67v.06a5.4 5.4 0 0 0 4.34 5.3 5.48 5.48 0 0 1-1.42.19 5.48 5.48 0 0 1-1-.1 5.4 5.4 0 0 0 5 3.7A10.84 10.84 0 0 1 1 19.54 15.3 15.3 0 0 0 8.29 21c9.55 0 14.78-7.9 14.78-14.76 0-.22 0-.42-.02-.63A10.44 10.44 0 0 0 23 3z"/>
-      </svg>
-    </a>
-    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zm5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1 
+<footer role="contentinfo">
+    <p>Contato: <a href="mailto:contato@agricultura.com.br" aria-label="Enviar email para contato@agricultura.com.br">contato@agricultura.com.br</a></p>
+    <div class="social-icons" aria-label="Redes sociais">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 12a10 10 0 1 0-11.5 9.8v-6.9h-3v-2.9h3v-2.2c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2v2.5h3.4l-.5 2.9h-2.9v6.9A10 10 0 0 0 22 12"/>
+            </svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14.86A5.48 5.48 0 0 0 22.4.37a10.72 10.72 0 0 1-3.44 1.32 5.4 5.4 0 0 0-9.2 4.92A15.33 15.33 0 0 1 1.64 2.16 5.35 5.35 0 0 0 3.16 9a5.43 5.43 0 0 1-2.44-.67v.06a5.4 5.4 0 0 0 4.34 5.3 5.48 5.48 0 0 1-1.42.19 5.48 5.48 0 0 1-1-.1 5.4 5.4 0 0 0 5 3.7A10.84 10.84 0 0 1 1 19.54 15.3 15.3 0 0 0 8.29 21c9.55 0 14.78-7.9 14.78-14.76 0-.22 0-.42-.02-.63A10.44 10.44 0 0 0 23 3z"/>
+            </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zm5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1"/>
+            </svg>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
